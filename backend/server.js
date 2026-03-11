@@ -3,12 +3,12 @@ const multer = require("multer")
 const cors = require("cors")
 require("dotenv").config()
 
-const parseFile = require("./parser")
-const generateSummary = require("./ai")
-const sendEmail = require("./email")
+const parseFile = require("./parser.js")
+const generateSummary = require("./ai.js")
+const sendEmail = require("./email.js")
 
 const swaggerUi = require("swagger-ui-express")
-const swaggerSpec = require("./swagger")
+const swaggerSpec = require("./swagger.js")
 
 const app = express()
 
